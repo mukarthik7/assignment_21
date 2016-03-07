@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Min Max</title>
+	</head>
+	<body>
+		<div id="page_container"> 
+			<p>Numbers: 45 ,64, 8, 02, 75, 19, 80, 99</p>
+			<p id ="min"></p>
+			<p id ="max"></p>
+		</div>
+			<script>
+				var numbers = [45 ,64, 8, 02, 75, 19, 80, 99];
+				max = numbers[0];
+				min = numbers[0];
+				for(var i = 0; i < numbers.length - 1; i++ )
+				{
+
+					if( numbers[i+1] > max )
+					{
+						max = numbers[i+1];
+					}
+					if( numbers[i+1] < min)
+					{
+						min = numbers[i+1];
+					}
+				}
+				document.getElementById('min').innerHTML = "Minimum "+min;
+				document.getElementById('max').innerHTML = "Maximum "+max;
+			</script>
+
+	
+	</body>
+</html>
